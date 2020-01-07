@@ -7,3 +7,17 @@ license server
 
 ./IntelliJIDEALicenseServer_linux_amd64
 
+# 使用su权限 # 进入/usr/local/software 目录 cd /usr/local/software
+
+#设置 IntelliJIDEALicenseServer_linux_amd64可执行权限
+
+chmod +x ./IntelliJIDEALicenseServer_linux_amd64
+
+# 运行注册服务 # -p 配置端口号 # -u 配置注册用户名
+
+nohup ./IntelliJIDEALicenseServer_linux_amd64 -p 1017 -u ysk &
+
+在idea注册界面选择授权服务器，填写http://ip:port(例如：127.0.0.1:1017) ，然后点击“OK
+————————————————
+版权声明：本文为CSDN博主「Rudy_Z」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/poem_ruru/article/details/81704272
